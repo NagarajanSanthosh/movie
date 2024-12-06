@@ -11,7 +11,7 @@ import java.sql.SQLException;
 public class PasswordRepos {
 
     public void insertManager(String userName, String password, String securityAns) throws SQLException {
-        String sql = "insert into managers (user_name, password, security-ans) values (?, ?, ?)";
+        String sql = "insert into managers (user_name, password, security_ans) values (?, ?, ?)";
         try (Connection connection = DBConnection.getConnection();
 
              PreparedStatement preparedStatement = connection.prepareStatement(sql);
